@@ -1,10 +1,9 @@
 # go
 
+go env -w GO111MODULE=auto\n
 go build main.go
 go run main.go
 
-go get
-go mod 
-go mod init
-go mod init main
-go mod tidy
+
+
+go mod init github.com/hangyuCho/game-api 

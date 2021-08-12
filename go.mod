@@ -1,4 +1,4 @@
-module main
+module github.com/hangyuCho/game-api
 
 go 1.16
 
