@@ -9,6 +9,14 @@ import (
 	echoSwagger "github.com/swaggo/echo-swagger"
 )
 
+// @title GAME API
+// @version 0.0.1
+// @description This is a game api server
+// @contact.name Request permission of game API
+// @contact.url http://github.com/hangyuCho
+// @contact.email chg3376@gmail.com
+// @host localhost
+// @BasePath /api
 func main() {
 	// Echo 인스턴스 생성
 	fmt.Println("hoge")

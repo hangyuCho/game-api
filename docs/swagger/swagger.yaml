@@ -1,10 +1,13 @@
-basePath: '{{.BasePath}}'
-host: '{{.Host}}'
+basePath: /api
+host: localhost
 info:
-  contact: {}
-  description: '{{.Description}}'
+  contact:
+    email: chg3376@gmail.com
+    name: Request permission of game API
+    url: http://github.com/hangyuCho
+  description: This is a game api server
   license: {}
-  title: '{{.Title}}'
-  version: '{{.Version}}'
+  title: GAME API
+  version: 0.0.1
 paths: {}
 swagger: "2.0"

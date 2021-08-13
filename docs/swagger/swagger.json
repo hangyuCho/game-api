@@ -1,13 +1,17 @@
 {
     "swagger": "2.0",
     "info": {
-        "description": "{{.Description}}",
-        "title": "{{.Title}}",
-        "contact": {},
+        "description": "This is a game api server",
+        "title": "GAME API",
+        "contact": {
+            "name": "Request permission of game API",
+            "url": "http://github.com/hangyuCho",
+            "email": "chg3376@gmail.com"
+        },
         "license": {},
-        "version": "{{.Version}}"
+        "version": "0.0.1"
     },
-    "host": "{{.Host}}",
-    "basePath": "{{.BasePath}}",
+    "host": "localhost",
+    "basePath": "/api",
     "paths": {}
 }

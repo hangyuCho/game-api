@@ -48,7 +48,7 @@ $ ~/go/bin/swag init
 $ go run main.go # 실행 자체는 문제 없음..
 # http://{host}:{port}/swagger/index.html 접속 시 아래 에러 발생
 # Fetch errorInternal Server Error doc.json
-# 
+# Parser error on line 14 end of the stream or a document separator is expected
 
 
 # 해결법
