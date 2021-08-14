@@ -11,6 +11,7 @@ import (
 
 // @title GAME API
 // @version 0.0.1
+// @license.name Apache 2.0
 // @description This is a game api server
 // @contact.name Request permission of game API
 // @contact.url http://github.com/hangyuCho

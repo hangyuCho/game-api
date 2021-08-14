@@ -6,8 +6,39 @@ info:
     name: Request permission of game API
     url: http://github.com/hangyuCho
   description: This is a game api server
-  license: {}
+  license:
+    name: Apache 2.0
   title: GAME API
   version: 0.0.1
-paths: {}
+paths:
+  /api/hello:
+    get:
+      consumes:
+      - application/x-json-stream
+      description: game API 상세
+      parameters:
+      - description: 필요 없습니다.
+        in: query
+        name: none
+        type: string
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
+  /hello:
+    get:
+      consumes:
+      - application/x-json-stream
+      description: game API 상세
+      parameters:
+      - description: 필요 없습니다.
+        in: query
+        name: none
+        type: string
+      responses:
+        "200":
+          description: ok
+          schema:
+            type: string
 swagger: "2.0"

@@ -8,10 +8,61 @@
             "url": "http://github.com/hangyuCho",
             "email": "chg3376@gmail.com"
         },
-        "license": {},
+        "license": {
+            "name": "Apache 2.0"
+        },
         "version": "0.0.1"
     },
     "host": "localhost",
     "basePath": "/api",
-    "paths": {}
+    "paths": {
+        "/api/hello": {
+            "get": {
+                "description": "game API 상세",
+                "consumes": [
+                    "application/x-json-stream"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "필요 없습니다.",
+                        "name": "none",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "ok",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        },
+        "/hello": {
+            "get": {
+                "description": "game API 상세",
+                "consumes": [
+                    "application/x-json-stream"
+                ],
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "필요 없습니다.",
+                        "name": "none",
+                        "in": "query"
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "ok",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
