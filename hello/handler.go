@@ -3,7 +3,6 @@ package hello
 import (
 	"net/http"
 
-	_ "github.com/hangyuCho/game-api/hello/docs"
 	"github.com/labstack/echo/v4"
 )
 

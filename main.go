@@ -3,6 +3,8 @@ package main
 import (
 	"fmt"
 
+	_ "github.com/hangyuCho/game-api/docs"
+
 	"github.com/hangyuCho/game-api/hello"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/echo/v4/middleware"
