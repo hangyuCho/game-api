@@ -97,8 +97,37 @@ remote: !       Push rejected to game-api-200.
 remote: 
 To https://git.heroku.com/game-api-200.git
  ! [remote rejected] master -> master (pre-receive hook declined)
- # 해결법..
- # 버전문제인 듯..?
+# 해결법..
+#main.go 패키지 위에 해당 주석 추가 >> //+build
+
+# 문제2
+remote: -----> Running: go install -v -tags heroku . 
+remote: can't load package: package github.com/hangyuCho/game-api: build constraints exclude all Go files in /tmp/build_62cb59cf
+remote:  !     Push rejected, failed to compile Go app.
+remote: 
+remote:  !     Push failed
+remote: Verifying deploy...
+remote: 
+remote: !       Push rejected to game-api-200.
+remote: 
+To https://git.heroku.com/game-api-200.git
+
+# 해결법..
+#main.go 패키지 위에 해당 주석 추가 >> //+build linux darwin windows
+
+remote: ../codon/tmp/cache/go-path/pkg/mod/github.com/labstack/echo/v4@v4.5.0/middleware/csrf.go:113:30: undefined: http.SameSiteNoneMode
+remote: note: module requires Go 1.15
+remote: github.com/swaggo/echo-swagger
+remote:  !     Push rejected, failed to compile Go app.
+remote: 
+remote:  !     Push failed
+remote: Verifying deploy...
+remote: 
+remote: !       Push rejected to game-api-200.
+remote: 
+To https://git.heroku.com/game-api-200.git
+
+# go mod edit -go=1.15
 ```
  ## 주석 사용 규칙 참고
  https://github.com/swaggo/swag#declarative-comments-format

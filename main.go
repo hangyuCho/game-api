@@ -1,4 +1,6 @@
 //+build linux darwin windows
+// +heroku goVersion go1.17
+
 package main
 
 import (
@@ -8,7 +10,6 @@ import (
 
 	"github.com/hangyuCho/game-api/hello"
 	"github.com/labstack/echo/v4"
-	"github.com/labstack/echo/v4/middleware"
 	echoSwagger "github.com/swaggo/echo-swagger"
 )
 
@@ -25,8 +26,8 @@ func main() {
 	// Echo 인스턴스 생성
 	fmt.Println("hoge")
 	e := echo.New()
-	e.Use(middleware.Logger())
-	e.Use(middleware.Recover())
+	//e.Use(middleware.Logger())
+	//e.Use(middleware.Recover())
 
 	//라우팅
 	e.GET("/hello", hello.MainPage())
