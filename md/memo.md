@@ -64,6 +64,42 @@ import (
 )
 ``` 
 
+5. 헤로쿠에 배포할 때 아래와 같은 에러가 발생
+
+``` shell
+remote: ../codon/tmp/cache/go-path/pkg/mod/golang.org/x/net@v0.0.0-20210805182204-aaa1db679c0d/http2/client_conn_pool.go:305:6: undefined: errors.Is
+remote: note: module requires Go 1.17
+remote: github.com/labstack/gommon/bytes
+remote: github.com/labstack/gommon/random
+remote: golang.org/x/time/rate
+remote: golang.org/x/net/webdav/internal/xml
+remote: golang.org/x/net/webdav
+remote: github.com/swaggo/files
+remote:  !     Push rejected, failed to compile Go app.
+remote: 
+remote:  !     Push failed
+remote:  !
+remote:  ! ## Warning - The same version of this code has already been built: e9cc5ac4a2a8c44ee930c857d529f3bd16be9a8c
+remote:  !
+remote:  ! We have detected that you have triggered a build from source code with version e9cc5ac4a2a8c44ee930c857d529f3bd16be9a8c
+remote:  ! at least twice. One common cause of this behavior is attempting to deploy code from a different branch.
+remote:  !
+remote:  ! If you are developing on a branch and deploying via git you must run:
+remote:  !
+remote:  !     git push heroku <branchname>:main
+remote:  !
+remote:  ! This article goes into details on the behavior:
+remote:  !   https://devcenter.heroku.com/articles/duplicate-build-version
+remote: 
+remote: Verifying deploy...
+remote: 
+remote: !       Push rejected to game-api-200.
+remote: 
+To https://git.heroku.com/game-api-200.git
+ ! [remote rejected] master -> master (pre-receive hook declined)
+ # 해결법..
+ # 버전문제인 듯..?
+```
  ## 주석 사용 규칙 참고
  https://github.com/swaggo/swag#declarative-comments-format
  
