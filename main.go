@@ -1,5 +1,4 @@
-// +build tools
-
+//+build linux darwin windows
 package main
 
 import (
