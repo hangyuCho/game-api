@@ -1,3 +1,4 @@
+//+build linux darwin windows
 package main
 
 import (
